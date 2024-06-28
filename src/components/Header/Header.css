@@ -1,0 +1,84 @@
+.header{
+    
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/header_img.png') no-repeat;
+    background-size: contain; 
+    position: relative;
+
+    /* background: no-repeat; */
+}
+.header-contents{
+    position: absolute;
+    display: flex ;
+    flex-direction: column ;
+    align-items: start;
+    gap: 1.5vw; 
+    max-width: 60%;
+    bottom: 10%;  
+    left: 6vw;
+    animation: fadein 2s;
+
+}
+.header-contents h2{
+    position: relative;
+    font-weight: 500;
+    color: rgb(230, 210, 213);
+    font-size: max(4.5vw,10px);
+    /* position:relative; */
+    animation: jumpback 2s 1;
+}
+
+.header-contents p{
+    color: wheat;
+    font-size: 1vw;
+}
+.header-contents button{
+    /* width: 120px;     */
+    /* background-color: rgb(79, 13, 13); */
+    background-color: black;
+    /* height: 50px; */
+    color: gray  ;
+    padding: 1vw 2.3vw;
+    /* position: center; */
+    font-size: max(1vw,13px);
+    border-start-end-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    font-family:  "Playwrite AU SA", cursive;
+    cursor:grab;
+    /* position: relative;
+    
+    left: 800px;
+    bottom: 300px; */
+    /* animation-name: fadein 3s; */
+    
+
+    /* border: none ; */
+  }
+ 
+  @media (max-width:1050px){
+    
+    .header-contents{
+        max-width: 45%;
+    }
+  }
+  @media (max-width:750px){
+    /* .header{
+        width: 1300px;;
+    } */
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+
+    }
+    .header-contents button{
+        padding: 2vw 40px ;
+        max-width:50px;
+        max-height: 40px;
+        font-size: 8px;
+        align-items: center;
+    }
+  }
