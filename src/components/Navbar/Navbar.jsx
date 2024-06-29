@@ -19,7 +19,7 @@ const[menu,setMenu]=useState("menu");
             <img  className='searh-icon' src={assets.search_icon} alt="" />
             <div className="navbar-search-icon">
                 <Link to={'/cart'}><img  src={assets.basket_icon} alt="" /></Link>
-                <div className='dot'></div>
+                <div className={gettotalcartamt()?"dot":""}></div>
             </div>
                 <button onClick={()=>setshowlogin(true)}>Sign in</button>
         </div>
